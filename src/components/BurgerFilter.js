@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-const BurgerFilter = (props) => {
+const BurgerFilter = ({handleFilter}) => {
   return (
     <div className="BurgerFilter">
-      <select onChange={console.log}>
+      <select onChange={handleFilter}>
         <option value="All">All</option>
         <option value="Relatable">Relatable</option>
         <option value="Bougie">Bougie</option>
