@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-const BurgerItem = (props) => {
+const BurgerItem = ({burger}) => {
   return (
     <div>
       <div className="BurgerItem">
-        { /* Name of Burger Here */ }
+        <h4>{burger.name}</h4>
       </div>
       <div className="BurgerBottomBun">
         <button onClick={console.log}>Show</button>
