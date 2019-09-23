@@ -7,8 +7,13 @@ export default class BurgerContainer extends Component {
   render(){
     return (
       <div className="BurgerContainer">
-        <BurgerFilter />
-        <BurgerList />
+        <BurgerFilter
+          filterBurgers={this.props.filterBurgers}
+        />
+        <BurgerList
+          displayBurger={this.props.displayBurger} 
+          deleteBurger={this.props.deleteBurger}
+          burgers={this.props.burgers} />
       </div>
     )
   }
